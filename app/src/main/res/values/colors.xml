@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange_200">#FFAB91</color>
+    <color name="orange_500">#FF5722</color>
+    <color name="orange_700">#E64A19</color>
+    <color name="yellow_200">#FFF59D</color>
+    <color name="yellow_700">#FBC02D</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <color name="rate_bad">#D52B1F</color>
+    <color name="rate_good">#24C42B</color>
+    
+    <color name="primary_text_yellow">#BFAA0C</color>
+    <color name="separator_color">#F1F3F4</color>
+</resources>

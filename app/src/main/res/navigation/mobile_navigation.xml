@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_catalog">
+
+    <fragment
+        android:id="@+id/navigation_catalog"
+        android:name="com.example.gamesapp.ui.catalog.CatalogFragment"
+        android:label="@string/title_catalog"
+        tools:layout="@layout/catalog_fragment" >
+        <action
+            android:id="@+id/action_navigation_catalog_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.example.gamesapp.ui.favorite.FavoritesFragment"
+        android:label="@string/title_favorite"
+        tools:layout="@layout/favorites_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.gamesapp.ui.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/settings_fragment" />
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.gamesapp.ui.catalog.game.GameFragment"
+        android:label="@string/title_game"
+        tools:layout="@layout/game_fragment" />
+</navigation>
